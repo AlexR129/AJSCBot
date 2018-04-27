@@ -1,0 +1,359 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B2EDB78B-7EAE-45D1-94A9-0A9485BA8C36}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>AlexSCBot</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Programmieren\C++\s2client-api\build\bin\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">ajscbot.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">ajscbot</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Programmieren\C++\s2client-api\build\bin\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">tutorial.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">tutorial</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Programmieren\C++\s2client-api\build\bin\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">tutorial.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">tutorial</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Programmieren\C++\s2client-api\build\bin\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">tutorial.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">tutorial</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Programmieren\C++\s2client-api\examples\..\include;D:\Programmieren\C++\s2client-api\examples\common;D:\Programmieren\C++\s2client-api\build\generated;D:\Programmieren\C++\s2client-api\contrib\SDL-mirror\include;D:\Programmieren\C++\s2client-api\contrib\protobuf\src;D:\Programmieren\C++\s2client-api\contrib\civetweb\include;D:\Programmieren\C++\s2client-api\build\contrib\ipv6-parse;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;USE_IPV6=1;_SCL_SECURE_NO_WARNINGS;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;USE_IPV6=1;_SCL_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Programmieren\C++\s2client-api\examples\..\include;D:\Programmieren\C++\s2client-api\examples\common;D:\Programmieren\C++\s2client-api\build\generated;D:\Programmieren\C++\s2client-api\contrib\SDL-mirror\include;D:\Programmieren\C++\s2client-api\contrib\protobuf\src;D:\Programmieren\C++\s2client-api\contrib\civetweb\include;D:\Programmieren\C++\s2client-api\build\contrib\ipv6-parse;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Programmieren\C++\s2client-api\examples\..\include;D:\Programmieren\C++\s2client-api\examples\common;D:\Programmieren\C++\s2client-api\build\generated;D:\Programmieren\C++\s2client-api\contrib\SDL-mirror\include;D:\Programmieren\C++\s2client-api\contrib\protobuf\src;D:\Programmieren\C++\s2client-api\contrib\civetweb\include;D:\Programmieren\C++\s2client-api\build\contrib\ipv6-parse;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\bin\sc2apid.lib;..\bin\sc2libd.lib;..\bin\sc2utilsd.lib;..\bin\sc2apid.lib;..\bin\sc2protocold.lib;..\bin\libprotobufd.lib;..\bin\civetweb.lib;..\contrib\ipv6-parse\bin\ipv6-parse.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Programmieren/C++/s2client-api/build/bin/tutorial.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Programmieren/C++/s2client-api/build/bin/tutorial.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Programmieren\C++\s2client-api\examples\..\include;D:\Programmieren\C++\s2client-api\examples\common;D:\Programmieren\C++\s2client-api\build\generated;D:\Programmieren\C++\s2client-api\contrib\SDL-mirror\include;D:\Programmieren\C++\s2client-api\contrib\protobuf\src;D:\Programmieren\C++\s2client-api\contrib\civetweb\include;D:\Programmieren\C++\s2client-api\build\contrib\ipv6-parse;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;USE_IPV6=1;_SCL_SECURE_NO_WARNINGS;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;USE_IPV6=1;_SCL_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Programmieren\C++\s2client-api\examples\..\include;D:\Programmieren\C++\s2client-api\examples\common;D:\Programmieren\C++\s2client-api\build\generated;D:\Programmieren\C++\s2client-api\contrib\SDL-mirror\include;D:\Programmieren\C++\s2client-api\contrib\protobuf\src;D:\Programmieren\C++\s2client-api\contrib\civetweb\include;D:\Programmieren\C++\s2client-api\build\contrib\ipv6-parse;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Programmieren\C++\s2client-api\examples\..\include;D:\Programmieren\C++\s2client-api\examples\common;D:\Programmieren\C++\s2client-api\build\generated;D:\Programmieren\C++\s2client-api\contrib\SDL-mirror\include;D:\Programmieren\C++\s2client-api\contrib\protobuf\src;D:\Programmieren\C++\s2client-api\contrib\civetweb\include;D:\Programmieren\C++\s2client-api\build\contrib\ipv6-parse;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\bin\sc2api.lib;..\bin\sc2lib.lib;..\bin\sc2utils.lib;..\bin\sc2api.lib;..\bin\sc2protocol.lib;..\bin\libprotobuf.lib;..\bin\civetweb.lib;..\contrib\ipv6-parse\bin\ipv6-parse.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Programmieren/C++/s2client-api/build/bin/tutorial.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Programmieren/C++/s2client-api/build/bin/tutorial.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Programmieren\C++\s2client-api\examples\..\include;D:\Programmieren\C++\s2client-api\examples\common;D:\Programmieren\C++\s2client-api\build\generated;D:\Programmieren\C++\s2client-api\contrib\SDL-mirror\include;D:\Programmieren\C++\s2client-api\contrib\protobuf\src;D:\Programmieren\C++\s2client-api\contrib\civetweb\include;D:\Programmieren\C++\s2client-api\build\contrib\ipv6-parse;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;USE_IPV6=1;_SCL_SECURE_NO_WARNINGS;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;USE_IPV6=1;_SCL_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Programmieren\C++\s2client-api\examples\..\include;D:\Programmieren\C++\s2client-api\examples\common;D:\Programmieren\C++\s2client-api\build\generated;D:\Programmieren\C++\s2client-api\contrib\SDL-mirror\include;D:\Programmieren\C++\s2client-api\contrib\protobuf\src;D:\Programmieren\C++\s2client-api\contrib\civetweb\include;D:\Programmieren\C++\s2client-api\build\contrib\ipv6-parse;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Programmieren\C++\s2client-api\examples\..\include;D:\Programmieren\C++\s2client-api\examples\common;D:\Programmieren\C++\s2client-api\build\generated;D:\Programmieren\C++\s2client-api\contrib\SDL-mirror\include;D:\Programmieren\C++\s2client-api\contrib\protobuf\src;D:\Programmieren\C++\s2client-api\contrib\civetweb\include;D:\Programmieren\C++\s2client-api\build\contrib\ipv6-parse;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\bin\sc2api.lib;..\bin\sc2lib.lib;..\bin\sc2utils.lib;..\bin\sc2api.lib;..\bin\sc2protocol.lib;..\bin\libprotobuf.lib;..\bin\civetweb.lib;..\bin\ipv6-parse.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Programmieren/C++/s2client-api/build/bin/tutorial.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Programmieren/C++/s2client-api/build/bin/tutorial.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Programmieren\C++\s2client-api\examples\..\include;D:\Programmieren\C++\s2client-api\examples\common;D:\Programmieren\C++\s2client-api\build\generated;D:\Programmieren\C++\s2client-api\contrib\SDL-mirror\include;D:\Programmieren\C++\s2client-api\contrib\protobuf\src;D:\Programmieren\C++\s2client-api\contrib\civetweb\include;D:\Programmieren\C++\s2client-api\build\contrib\ipv6-parse;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;USE_IPV6=1;_SCL_SECURE_NO_WARNINGS;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;USE_IPV6=1;_SCL_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Programmieren\C++\s2client-api\examples\..\include;D:\Programmieren\C++\s2client-api\examples\common;D:\Programmieren\C++\s2client-api\build\generated;D:\Programmieren\C++\s2client-api\contrib\SDL-mirror\include;D:\Programmieren\C++\s2client-api\contrib\protobuf\src;D:\Programmieren\C++\s2client-api\contrib\civetweb\include;D:\Programmieren\C++\s2client-api\build\contrib\ipv6-parse;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Programmieren\C++\s2client-api\examples\..\include;D:\Programmieren\C++\s2client-api\examples\common;D:\Programmieren\C++\s2client-api\build\generated;D:\Programmieren\C++\s2client-api\contrib\SDL-mirror\include;D:\Programmieren\C++\s2client-api\contrib\protobuf\src;D:\Programmieren\C++\s2client-api\contrib\civetweb\include;D:\Programmieren\C++\s2client-api\build\contrib\ipv6-parse;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\bin\sc2api.lib;..\bin\sc2lib.lib;..\bin\sc2utils.lib;..\bin\sc2api.lib;..\bin\sc2protocol.lib;..\bin\libprotobuf.lib;..\bin\civetweb.lib;..\bin\ipv6-parse.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Programmieren/C++/s2client-api/build/bin/tutorial.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Programmieren/C++/s2client-api/build/bin/tutorial.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Programmieren\C++\s2client-api\examples\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/Programmieren/C++/s2client-api/examples/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/Programmieren/C++/s2client-api -BD:/Programmieren/C++/s2client-api/build --check-stamp-file D:/Programmieren/C++/s2client-api/build/examples/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/Programmieren/C++/s2client-api/examples/CMakeLists.txt;D:\Programmieren\C++\s2client-api\examples\CMakeLists.txt;D:\Programmieren\C++\s2client-api\examples\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Programmieren\C++\s2client-api\build\examples\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/Programmieren/C++/s2client-api/examples/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/Programmieren/C++/s2client-api -BD:/Programmieren/C++/s2client-api/build --check-stamp-file D:/Programmieren/C++/s2client-api/build/examples/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Programmieren/C++/s2client-api/examples/CMakeLists.txt;D:\Programmieren\C++\s2client-api\examples\CMakeLists.txt;D:\Programmieren\C++\s2client-api\examples\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Programmieren\C++\s2client-api\build\examples\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/Programmieren/C++/s2client-api/examples/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/Programmieren/C++/s2client-api -BD:/Programmieren/C++/s2client-api/build --check-stamp-file D:/Programmieren/C++/s2client-api/build/examples/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/Programmieren/C++/s2client-api/examples/CMakeLists.txt;D:\Programmieren\C++\s2client-api\examples\CMakeLists.txt;D:\Programmieren\C++\s2client-api\examples\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Programmieren\C++\s2client-api\build\examples\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/Programmieren/C++/s2client-api/examples/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/Programmieren/C++/s2client-api -BD:/Programmieren/C++/s2client-api/build --check-stamp-file D:/Programmieren/C++/s2client-api/build/examples/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/Programmieren/C++/s2client-api/examples/CMakeLists.txt;D:\Programmieren\C++\s2client-api\examples\CMakeLists.txt;D:\Programmieren\C++\s2client-api\examples\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Programmieren\C++\s2client-api\build\examples\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\Programmieren\C++\s2client-api\build\ZERO_CHECK.vcxproj">
+      <Project>{4691B104-CE26-3D1C-8D27-20A4781D45F6}</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Programmieren\C++\s2client-api\build\contrib\civetweb\src\civetweb-c-library.vcxproj">
+      <Project>{60CB12F3-6032-3CE5-8F90-9DD5501B43E1}</Project>
+      <Name>civetweb-c-library</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Programmieren\C++\s2client-api\build\contrib\ipv6-parse\ipv6-parse.vcxproj">
+      <Project>{8083DF4A-1E49-3551-ADD4-9B7FD623CE15}</Project>
+      <Name>ipv6-parse</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Programmieren\C++\s2client-api\build\contrib\protobuf\cmake\libprotobuf.vcxproj">
+      <Project>{5DFD3184-8A33-3A72-90B5-6E5ED4482DB9}</Project>
+      <Name>libprotobuf</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Programmieren\C++\s2client-api\build\src\sc2api.vcxproj">
+      <Project>{3C1CA06C-13BA-3285-9462-122C91C7DA49}</Project>
+      <Name>sc2api</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Programmieren\C++\s2client-api\build\src\sc2lib.vcxproj">
+      <Project>{AA976069-C9CD-34F7-A703-1D7DD3436EC7}</Project>
+      <Name>sc2lib</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Programmieren\C++\s2client-api\build\src\sc2protocol.vcxproj">
+      <Project>{777CD030-A1DE-3A3A-ADB0-E45F0AF25E75}</Project>
+      <Name>sc2protocol</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Programmieren\C++\s2client-api\build\src\sc2utils.vcxproj">
+      <Project>{92FAAF8D-C1D9-3339-AA16-4FDB7D71F5E6}</Project>
+      <Name>sc2utils</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
