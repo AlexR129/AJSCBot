@@ -15,6 +15,7 @@ public:
 		//std::cout << Observation()->GetMinerals() << std::endl;
 		TryBuildSupplyDepot();
 		TryBuildRefinery();
+		TryBuildBarracks();
 	}
 
 	virtual void OnUnitCreated(const Unit* unit) final
@@ -48,6 +49,15 @@ public:
 			if (!target)
 				break;
 			Actions()->UnitCommand(unit, ABILITY_ID::SMART, target);
+			break;
+		}
+		case UNIT_TYPEID::TERRAN_BARRACKS: {
+			Actions()->UnitCommand(unit, ABILITY_ID::TRAIN_MARINE);
+			break;
+		}
+		case UNIT_TYPEID::TERRAN_MARINE: {
+			const GameInfo& game_info = Observation()->GetGameInfo();
+			Actions()->UnitCommand(unit, ABILITY_ID::ATTACK_ATTACK, game_info.enemy_start_locations.front());
 			break;
 		}
 		default: {
@@ -145,6 +155,20 @@ private:
 		return TryBuildStructure(ABILITY_ID::BUILD_SUPPLYDEPOT);
 	}
 
+	bool TryBuildBarracks() {
+		const ObservationInterface* observation = Observation();
+
+		if (CountUnitType(UNIT_TYPEID::TERRAN_SUPPLYDEPOT) < 1) {
+			return false;
+		}
+
+		if (CountUnitType(UNIT_TYPEID::TERRAN_BARRACKS) > 0) {
+			return false;
+		}
+
+		return TryBuildStructure(ABILITY_ID::BUILD_BARRACKS);
+	}
+
 	bool TryBuildRefinery() {
 		const ObservationInterface* observation = Observation();
 		
@@ -207,6 +231,10 @@ private:
 			}
 		}
 		return nullptr;
+	}
+
+	size_t CountUnitType(UNIT_TYPEID unit_type) {
+		return Observation()->GetUnits(Unit::Alliance::Self, IsUnit(unit_type)).size();
 	}
 };
 
